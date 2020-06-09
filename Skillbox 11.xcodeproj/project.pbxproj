@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		365A90BD248C0E7B0010FA91 /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365A90BC248C0E7B0010FA91 /* ClockView.swift */; };
+		365A90BF248D821F0010FA91 /* SegmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365A90BE248D821F0010FA91 /* SegmentView.swift */; };
+		36C05FEE248ACF5800FDA164 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C05FED248ACF5800FDA164 /* CustomButton.swift */; };
 		36CA35D824898211004CE09A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36CA35D724898211004CE09A /* AppDelegate.swift */; };
 		36CA35DA24898211004CE09A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36CA35D924898211004CE09A /* SceneDelegate.swift */; };
 		36CA35DC24898211004CE09A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36CA35DB24898211004CE09A /* ViewController.swift */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		365A90BC248C0E7B0010FA91 /* ClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
+		365A90BE248D821F0010FA91 /* SegmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentView.swift; sourceTree = "<group>"; };
+		36C05FED248ACF5800FDA164 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		36CA35D424898211004CE09A /* Skillbox 11.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Skillbox 11.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		36CA35D724898211004CE09A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		36CA35D924898211004CE09A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +43,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		365A90C0248D8C840010FA91 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				36CA35DB24898211004CE09A /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		36C05FEC248ACF3800FDA164 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				36C05FED248ACF5800FDA164 /* CustomButton.swift */,
+				365A90BC248C0E7B0010FA91 /* ClockView.swift */,
+				365A90BE248D821F0010FA91 /* SegmentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		36CA35CB24898211004CE09A = {
 			isa = PBXGroup;
 			children = (
@@ -56,9 +80,10 @@
 		36CA35D624898211004CE09A /* Skillbox 11 */ = {
 			isa = PBXGroup;
 			children = (
+				36C05FEC248ACF3800FDA164 /* View */,
+				365A90C0248D8C840010FA91 /* Controller */,
 				36CA35D724898211004CE09A /* AppDelegate.swift */,
 				36CA35D924898211004CE09A /* SceneDelegate.swift */,
-				36CA35DB24898211004CE09A /* ViewController.swift */,
 				36CA35DD24898211004CE09A /* Main.storyboard */,
 				36CA35E024898213004CE09A /* Assets.xcassets */,
 				36CA35E224898213004CE09A /* LaunchScreen.storyboard */,
@@ -138,8 +163,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36C05FEE248ACF5800FDA164 /* CustomButton.swift in Sources */,
+				365A90BD248C0E7B0010FA91 /* ClockView.swift in Sources */,
 				36CA35DC24898211004CE09A /* ViewController.swift in Sources */,
 				36CA35D824898211004CE09A /* AppDelegate.swift in Sources */,
+				365A90BF248D821F0010FA91 /* SegmentView.swift in Sources */,
 				36CA35DA24898211004CE09A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

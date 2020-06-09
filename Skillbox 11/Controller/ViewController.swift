@@ -9,12 +9,15 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+  var delegate: SegmentViewDelegate?
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view.
+
   }
 
-
 }
-
+extension ViewController: SegmentViewDelegate{
+  func segmentPressed(_ segment: UIView, _ value: Int){
+    print (1)
+  }
+}

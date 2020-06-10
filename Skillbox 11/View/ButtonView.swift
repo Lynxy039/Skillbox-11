@@ -9,8 +9,7 @@
 import UIKit
 
 @IBDesignable
-class CustomButton: UIButton {
-  // Перевёл в UIButton, чтобы поиграться с редактированием title. В принципе, для задания было достаточно и UIView.
+class ButtonView: UIButton {
   @IBInspectable
   var title: String?{
     didSet{

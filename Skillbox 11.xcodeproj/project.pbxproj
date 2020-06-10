@@ -9,27 +9,29 @@
 /* Begin PBXBuildFile section */
 		365A90BD248C0E7B0010FA91 /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365A90BC248C0E7B0010FA91 /* ClockView.swift */; };
 		365A90BF248D821F0010FA91 /* SegmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365A90BE248D821F0010FA91 /* SegmentView.swift */; };
-		36C05FEE248ACF5800FDA164 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C05FED248ACF5800FDA164 /* CustomButton.swift */; };
+		36C05FEE248ACF5800FDA164 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C05FED248ACF5800FDA164 /* ButtonView.swift */; };
 		36CA35D824898211004CE09A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36CA35D724898211004CE09A /* AppDelegate.swift */; };
 		36CA35DA24898211004CE09A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36CA35D924898211004CE09A /* SceneDelegate.swift */; };
-		36CA35DC24898211004CE09A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36CA35DB24898211004CE09A /* ViewController.swift */; };
 		36CA35DF24898211004CE09A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36CA35DD24898211004CE09A /* Main.storyboard */; };
 		36CA35E124898213004CE09A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36CA35E024898213004CE09A /* Assets.xcassets */; };
 		36CA35E424898213004CE09A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36CA35E224898213004CE09A /* LaunchScreen.storyboard */; };
+		36F5D2D4248F9950005E5D0A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F5D2D3248F9950005E5D0A /* MainViewController.swift */; };
+		36F5D2FC24917A38005E5D0A /* UIColorToHex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F5D2FB24917A38005E5D0A /* UIColorToHex.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		365A90BC248C0E7B0010FA91 /* ClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
 		365A90BE248D821F0010FA91 /* SegmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentView.swift; sourceTree = "<group>"; };
-		36C05FED248ACF5800FDA164 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		36C05FED248ACF5800FDA164 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		36CA35D424898211004CE09A /* Skillbox 11.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Skillbox 11.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		36CA35D724898211004CE09A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		36CA35D924898211004CE09A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		36CA35DB24898211004CE09A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		36CA35DE24898211004CE09A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		36CA35E024898213004CE09A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		36CA35E324898213004CE09A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		36CA35E524898213004CE09A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36F5D2D3248F9950005E5D0A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		36F5D2FB24917A38005E5D0A /* UIColorToHex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorToHex.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +48,7 @@
 		365A90C0248D8C840010FA91 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				36CA35DB24898211004CE09A /* ViewController.swift */,
+				36F5D2D3248F9950005E5D0A /* MainViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -54,7 +56,7 @@
 		36C05FEC248ACF3800FDA164 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				36C05FED248ACF5800FDA164 /* CustomButton.swift */,
+				36C05FED248ACF5800FDA164 /* ButtonView.swift */,
 				365A90BC248C0E7B0010FA91 /* ClockView.swift */,
 				365A90BE248D821F0010FA91 /* SegmentView.swift */,
 			);
@@ -86,6 +88,7 @@
 				36CA35D924898211004CE09A /* SceneDelegate.swift */,
 				36CA35DD24898211004CE09A /* Main.storyboard */,
 				36CA35E024898213004CE09A /* Assets.xcassets */,
+				36F5D2FB24917A38005E5D0A /* UIColorToHex.swift */,
 				36CA35E224898213004CE09A /* LaunchScreen.storyboard */,
 				36CA35E524898213004CE09A /* Info.plist */,
 			);
@@ -163,9 +166,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36C05FEE248ACF5800FDA164 /* CustomButton.swift in Sources */,
+				36F5D2D4248F9950005E5D0A /* MainViewController.swift in Sources */,
+				36F5D2FC24917A38005E5D0A /* UIColorToHex.swift in Sources */,
+				36C05FEE248ACF5800FDA164 /* ButtonView.swift in Sources */,
 				365A90BD248C0E7B0010FA91 /* ClockView.swift in Sources */,
-				36CA35DC24898211004CE09A /* ViewController.swift in Sources */,
 				36CA35D824898211004CE09A /* AppDelegate.swift in Sources */,
 				365A90BF248D821F0010FA91 /* SegmentView.swift in Sources */,
 				36CA35DA24898211004CE09A /* SceneDelegate.swift in Sources */,

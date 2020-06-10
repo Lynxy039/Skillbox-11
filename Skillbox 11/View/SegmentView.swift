@@ -9,7 +9,7 @@
 import UIKit
 
 protocol SegmentViewDelegate: NSObjectProtocol{
-  func segmentPressed(_ segment: UIView, _ value: Int)
+  func segmentPressed(_ segment: SegmentView, _ value: Int)
 }
 
 @IBDesignable
@@ -17,8 +17,9 @@ class SegmentView: UIView {
   var isSetuped = false
   var segmentSize: CGFloat{get{frame.size.width/2}}
   weak var delegate: SegmentViewDelegate?
-  
+
   // MARK: - views
+  
   let leftSegment = UIButton()
   let rightSegment = UIButton()
   let movingSegment = UIView()
@@ -68,6 +69,7 @@ class SegmentView: UIView {
       layer.borderColor = borderColor?.cgColor
     }
   }
+
   @IBInspectable
   var cornerRadius: CGFloat = 0{
     didSet{
@@ -93,21 +95,20 @@ class SegmentView: UIView {
     addSubview(movingSegment)
     addSubview(leftSegment)
     addSubview(rightSegment)
-    
-    
   }
+
   @objc func selectLeft(sender : UITapGestureRecognizer) {
     let h = frame.size.height
     UIView.animate(withDuration: 0.2, delay: 0.0, options: UIView.AnimationOptions.curveEaseIn, animations: {
       self.movingSegment.frame = CGRect(x: 0, y: 0, width: self.segmentSize, height: h)
     })
-    delegate?.segmentPressed(leftSegment, 1)
+    delegate?.segmentPressed(self, 1)
   }
   @objc func selectRight(sender : UITapGestureRecognizer) {
     let h = frame.size.height
     UIView.animate(withDuration: 0.2, delay: 0.0, options: UIView.AnimationOptions.curveEaseIn, animations: {
       self.movingSegment.frame = CGRect(x: self.segmentSize, y: 0, width: self.segmentSize, height: h)
     })
-    delegate?.segmentPressed(rightSegment, 2)
+    delegate?.segmentPressed(self, 2)
   }
 }

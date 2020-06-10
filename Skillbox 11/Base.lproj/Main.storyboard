@@ -7,15 +7,15 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Skillbox_11" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="Skillbox_11" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZNw-ah-vtP" customClass="CustomButton" customModule="Skillbox_11" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZNw-ah-vtP" customClass="ButtonView" customModule="Skillbox_11" customModuleProvider="target">
                                 <rect key="frame" x="75" y="70" width="225" height="70"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                 <constraints>
@@ -40,8 +40,11 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="titleSize">
                                         <real key="value" value="30"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Hello world"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="To lightside"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YCp-cz-IUs"/>
+                                </connections>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="35s-Pb-08b" customClass="ClockView" customModule="Skillbox_11" customModuleProvider="target">
                                 <rect key="frame" x="75" y="221" width="225" height="225"/>
@@ -102,7 +105,7 @@
                                         <real key="value" value="15"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="mainColor">
-                                        <color key="value" red="0.0" green="0.43239843382889503" blue="0.71206773477157359" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="value" red="0.0" green="0.43137254901960786" blue="0.71372549019607845" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
@@ -116,8 +119,8 @@
                                     <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
                                         <color key="value" red="1" green="0.4760972798957761" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="leftTitle" value="First"/>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="rightTitle" value="Second"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="leftTitle" value="Light"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="rightTitle" value="Dark"/>
                                     <userDefinedRuntimeAttribute type="number" keyPath="titleSize">
                                         <real key="value" value="27"/>
                                     </userDefinedRuntimeAttribute>
@@ -150,6 +153,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="buttonView" destination="ZNw-ah-vtP" id="bJy-Q4-GLT"/>
+                        <outlet property="clockView" destination="35s-Pb-08b" id="RBh-0x-ooc"/>
+                        <outlet property="segmentView" destination="y9C-fd-WAy" id="Ha6-Jh-Lyy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
